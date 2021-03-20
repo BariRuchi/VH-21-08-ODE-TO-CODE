@@ -1,4 +1,4 @@
-<?php   include 'import.php';
+<?php   include '../import.php';
 $year=$_GET['year'];?>
 <!DOCTYPE html>
 <html>
@@ -93,7 +93,7 @@ input[type=submit]:hover {
 
 <body style="text-align:center;">
 	<div>
-   <a href="home.php?year=<?php echo $year;?>"><button class="button">CANCEL</button><br></a></div>
+   <a href="../home.php?year=<?php echo $year;?>"><button class="button">CANCEL</button><br></a></div>
    
    <form method="POST" action=" ">
 	
@@ -117,6 +117,7 @@ input[type=submit]:hover {
          <div class="radio">
             <label><input type="radio" name="optradio" value="miniproject"> Miniproject</label>
          </div>
+        
             
    
 	</div>
