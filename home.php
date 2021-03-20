@@ -77,8 +77,8 @@ $year =$_GET['year'];
   </div>
   
   <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="pdf.php" style="color:white"> SYLLABUS </a></button>
-  <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="index.php" style="color:white"> Years </a></button>
-  <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="student.php?year=<?php echo $year;?>" style="color:white"> STUDENTS LIST </a></button>
+  <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="years.php" style="color:white"> Years </a></button>
+  <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="student/student.php?year=<?php echo $year;?>" style="color:white"> STUDENTS LIST </a></button>
   <button type="button" class="btn btn-dark mb-3 ml-3" style="width:250px"> <a href="result.php?year=<?php echo $year;?>" style="color:white"> RESULT </a></button>
   ​<div class="container-fluid">
     <div class="row">
@@ -145,7 +145,7 @@ $year =$_GET['year'];
 
           <div class="tab-pane fade" id="list-semester3" role="tabpanel" aria-labelledby="list-semester3-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semester3&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semester3&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
               
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -167,8 +167,8 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semester3&year=<?php echo $year;?>">
-                          <font color="white">Delete</font>
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semester3&year=<?php echo $year;?>">
+                          <label color="white">Delete</label>
                         </a>
                       </td>
                     </tr>
@@ -181,7 +181,7 @@ $year =$_GET['year'];
           </div>
           <div class="tab-pane fade" id="list-semester4" role="tabpanel" aria-labelledby="list-semester4-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semester4&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semester4&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
               
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -203,7 +203,7 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>">
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>">
                           <font color="white">Delete</font>
                         </a>
                       </td>
@@ -216,7 +216,7 @@ $year =$_GET['year'];
           </div>
           <div class="tab-pane fade" id="list-semester5" role="tabpanel" aria-labelledby="list-semester5-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
               
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -238,7 +238,7 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>">
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semister5&year=<?php echo $year;?>">
                           <font color="white">Delete</font>
                         </a>
                       </td>
@@ -252,7 +252,7 @@ $year =$_GET['year'];
           </div>
           <div class="tab-pane fade" id="list-semester6" role="tabpanel" aria-labelledby="list-semester6-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semester6&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semester6&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
              
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -274,7 +274,7 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=semester6">
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=semester6">
                           <font color="white">Delete</font>
                         </a>
                       </td>
@@ -288,7 +288,7 @@ $year =$_GET['year'];
           </div>
           <div class="tab-pane fade" id="list-semester7" role="tabpanel" aria-labelledby="list-semester7-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semester7&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semester7&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
              
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -310,7 +310,7 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=semester7">
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=semester7">
                           <font color="white">Delete</font>
                         </a>
                       </td>
@@ -324,7 +324,7 @@ $year =$_GET['year'];
           </div>
           <div class="tab-pane fade" id="list-semester8" role="tabpanel" aria-labelledby="list-semester8-list">
             <div class="table-responsive mt-30">
-              <div class="btn btn-success"><a href="add_course.php?sem=<?php echo $year;?>-semester8&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
+              <div class="btn btn-success"><a href="add/add_course.php?sem=<?php echo $year;?>-semester8&year=<?php echo $year;?>" style="color:white"> + ADD COURSE </a></div>
              
               <table class="table ucp-table">
                 <thead class="thead-s">
@@ -346,7 +346,7 @@ $year =$_GET['year'];
                       <td class="text-center"><?php echo "$rows[SUBJECT]" ?></td>
                       <td class="text-center">
 
-                        <a class="btn btn-danger" href="DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semester8&year=<?php echo $year;?>">
+                        <a class="btn btn-danger" href="delete/DelCrs.php?crs_code=<?php echo "$rows[crs_code]"; ?>&sem=<?php echo $year;?>-semester8&year=<?php echo $year;?>">
                           <font color="white">Delete</font>
                         </a>
                       </td>

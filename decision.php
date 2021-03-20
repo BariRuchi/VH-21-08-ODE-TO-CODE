@@ -32,23 +32,23 @@ function decision(){
 	
 	
 	if('C' == com){
- window.location ="page2.php?year=<?php echo $year;?>";
+ window.location ="display/page2.php?year=<?php echo $year;?>";
  }
  else if('O' == com){
- window.location ="page2.php?year=<?php echo $year;?>";
+ window.location ="display/page2.php?year=<?php echo $year;?>";
  }
  else if('L' == com && 'experiments'==category){
-	 window.location ="PAGEL.php?year=<?php echo $year;?>";
+	 window.location ="display/PAGEL.php?year=<?php echo $year;?>";
  }
  else if('L' == com && 'miniproject'==category){
-	 window.location ="PAGEL2.php?year=<?php echo $year;?>";
+	 window.location ="display/PAGEL2.php?year=<?php echo $year;?>";
  }
  
  else if('D' == com){
-	 window.location ="page2.php?year=<?php echo $year;?>";
+	 window.location ="display/page2.php?year=<?php echo $year;?>";
  }
  else if('M' == com){
-	 window.location ="PAGEM.php?year=<?php echo $year;?>";
+	 window.location ="display/PAGEM.php?year=<?php echo $year;?>";
  }
  
 }

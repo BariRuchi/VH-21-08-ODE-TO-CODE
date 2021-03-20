@@ -1,0 +1,32 @@
+html {
+  font-family:arial;
+  font-size: 18px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+thead{
+  font-weight:bold;
+  text-align:center;
+  background:rgb(41, 84, 84);
+  color:white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.footer {
+  text-align:right;
+  font-weight:bold;
+}
+
+tbody >tr:nth-child(even) {
+  background:rgb(208,232,232);
+}
+tbody >tr:nth-child(odd) {
+  background:white;
+}
